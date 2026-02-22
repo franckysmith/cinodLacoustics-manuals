@@ -154,7 +154,8 @@
       "id": "x8",
       "name": "X8",
       "files": [
-        { "path": "HP manuel/HP Manuel EN/X8_OM_EN_compressed.pdf", "size": 6258890, "type": "manual" }
+        { "path": "HP manuel/HP Manuel EN/X8_OM_EN_compressed.pdf", "size": 6258890, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/X8_SPS_EN_3.0_compressed.pdf", "size": 258890, "type": "spec" }
       ]
     },
     {
