@@ -1,0 +1,324 @@
+{
+  "version": 2,
+  "remoteBase": "https://franckysmith.github.io/cinodLacoustics-manuals/",
+  "items": [
+    {
+      "id": "k1",
+      "name": "K1 / K1-SB",
+      "files": [
+        { "path": "HP manuel/HP Manuel Riging EN/K1_RM_EN_compressed.pdf", "size": 51775865, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/K1-SB_SP_EN_2.0_compressed.pdf", "size": 868548, "type": "spec" },
+        { "path": "HP manuel/HP Manuel FR/K1_RM_FR_compressed.pdf", "size": 53616934, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "k2",
+      "name": "K2",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/K2_OM_EN_compressed.pdf", "size": 17153999, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/K2_SPS_EN_3.1_compressed.pdf", "size": 2798334, "type": "spec" }
+      ]
+    },
+    {
+      "id": "k3",
+      "name": "K3",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/K3_OM_EN_compressed.pdf", "size": 42411413, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/K3_SPS_EN_1.0_compressed.pdf", "size": 1496058, "type": "spec" }
+      ]
+    },
+    {
+      "id": "kara2",
+      "name": "Kara II",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/Kara_II_OM_EN_compressed.pdf", "size": 17179889, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/Kara II_SPS_EN_1.1_compressed.pdf", "size": 766635, "type": "spec" }
+      ]
+    },
+    {
+      "id": "kudo",
+      "name": "Kudo",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/KUDO_UM_ML_2-1_compressed.pdf", "size": 913981, "type": "manual" },
+        { "path": "HP manuel/HP Manuel Riging EN/KUDO_RM_ML_2-0_compressed.pdf", "size": 3696239, "type": "manual" }
+      ]
+    },
+    {
+      "id": "l2",
+      "name": "L2 / L2D",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/L2_EN_compressed.pdf", "size": 31940742, "type": "manual" },
+        { "path": "HP manuel/HP Manuel EN/L2_OM_EN-compressed.pdf", "size": 31877553, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/L2_SPS_EN_1.0_compressed.pdf", "size": 925486, "type": "spec" },
+        { "path": "HP manuel/HP system-spec-sheet/L2D_SP_EN_1.0.pdf", "size": 510056, "type": "spec" }
+      ]
+    },
+    {
+      "id": "a10",
+      "name": "A10 / A10i",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/A10_OM_EN_compressed.pdf", "size": 22067608, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/A10i_SP_EN_1.0_compressed.pdf", "size": 186157, "type": "spec" }
+      ]
+    },
+    {
+      "id": "a15",
+      "name": "A15",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/A15_OM_EN_compressed.pdf", "size": 33102442, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/A15_SPS_EN_1.2_compressed.pdf", "size": 2082531, "type": "spec" }
+      ]
+    },
+    {
+      "id": "arcs2",
+      "name": "ARCS II",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/ARCSII_UM_EN_compressed.pdf", "size": 374336, "type": "manual" },
+        { "path": "HP manuel/HP Manuel Riging EN/ARCSII_RM_EN.pdf", "size": 3519961, "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/ARCSII_UM_FR.pdf", "size": 960046, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel Riging FR/ARCSII_RM_FR_compressed.pdf", "size": 2705953, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/arcsfr.pdf", "size": 920954, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "arcswifo",
+      "name": "ARCS Wide / Focus",
+      "files": [
+        { "path": "HP manuel/HP Manuel Riging EN/ARCSWIFO_RM_EN.pdf", "size": 5070786, "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/ARCSWIFO_UM_FR_compressed.pdf", "size": 1310454, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/arcsfocus-3.pdf", "size": 1396005, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/ARCS_UM_FR_3-0_compressed.pdf", "size": 1718351, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "kiva2",
+      "name": "Kiva II",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/Kiva_II_OM_EN_compressed.pdf", "size": 9408985, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/KIVAII_SPS_EN_4.0_compressed.pdf", "size": 1740075, "type": "spec" }
+      ]
+    },
+    {
+      "id": "kiva",
+      "name": "Kiva / Kilo",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/Kiva_OM_EN_compressed.pdf", "size": 5366902, "type": "manual" },
+        { "path": "HP manuel/HP Manuel EN/KIVAKILO_UM_EN_compressed.pdf", "size": 435866, "type": "manual" },
+        { "path": "HP manuel/HP Manuel EN/KIVA-SB15m_UM_EN_1.3_compressed.pdf", "size": 474915, "type": "manual" },
+        { "path": "HP manuel/HP Manuel Riging EN/KIVA-SB15m_RM_EN.pdf", "size": 1581129, "type": "manual" },
+        { "path": "HP manuel/HP Manuel Riging EN/KIVA_RM_ML_1-0_compressed.pdf", "size": 1974720, "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/KIVAKILO_UM_FR_compressed.pdf", "size": 2412959, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/KIVA-SB15m_UM_FR_1.3.pdf", "size": 1369143, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/KIVA_SP_FR_1.pdf", "size": 852603, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/KILO_SP_FR_1.pdf", "size": 917755, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel Riging FR/KIVA-SB15m_RM_FR_compressed.pdf", "size": 1021832, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "syva",
+      "name": "Syva",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/Syva_OM_EN_compressed.pdf", "size": 2840813, "type": "manual" }
+      ]
+    },
+    {
+      "id": "soka",
+      "name": "Soka",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/Soka_OM_EN_compressed.pdf", "size": 2733594, "type": "manual" }
+      ]
+    },
+    {
+      "id": "vdosc",
+      "name": "V-DOSC",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/V-DOSC MANUAL_compressed.pdf", "size": 6446771, "type": "manual" }
+      ]
+    },
+    {
+      "id": "dvdosc",
+      "name": "dV-DOSC / dV-SUB",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/dV-DOSC dV-SUB MANUAL_compressed.pdf", "size": 9555287, "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/dV_UM_FR_3-0_compressed.pdf", "size": 4739759, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/dvsubfr_compressed.pdf", "size": 160510, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "x8",
+      "name": "X8",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/X8_OM_EN_compressed.pdf", "size": 6258890, "type": "manual" }
+      ]
+    },
+    {
+      "id": "x12",
+      "name": "X12",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/X12_OM_EN_compressed.pdf", "size": 8294342, "type": "manual" }
+      ]
+    },
+    {
+      "id": "x15hiq",
+      "name": "X15 HiQ",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/X15_HiQ_OM_EN_compressed.pdf", "size": 8432347, "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/115XT HiQ_SP_FR_1_compressed.pdf", "size": 2289194, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "x4i",
+      "name": "X4i",
+      "files": [
+        { "path": "HP manuel/HP system-spec-sheet/X4i_SPS_EN_2.1_compressed.pdf", "size": 666026, "type": "spec" }
+      ]
+    },
+    {
+      "id": "x6i",
+      "name": "X6i",
+      "files": [
+        { "path": "HP manuel/HP system-spec-sheet/X6i_SPS_EN_1.21_compressed.pdf", "size": 562364, "type": "spec" }
+      ]
+    },
+    {
+      "id": "5xt",
+      "name": "5XT",
+      "files": [
+        { "path": "HP manuel/HP system-spec-sheet/5XT_SPS_EN_5.0_compressed.pdf", "size": 395418, "type": "spec" }
+      ]
+    },
+    {
+      "id": "8xt",
+      "name": "8XT",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/8XT_UM_ML_1.4_compressed.pdf", "size": 534791, "type": "manual" }
+      ]
+    },
+    {
+      "id": "12xt",
+      "name": "12XT",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/12XT_UM_ML_1-4_compressed.pdf", "size": 658812, "type": "manual" }
+      ]
+    },
+    {
+      "id": "112xt-115xt",
+      "name": "112XT / 115XT",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/112XT-115XT  V2-0 EN_compressed.pdf", "size": 1308199, "type": "manual" },
+        { "path": "HP manuel/HP Manuel EN/115XTHiQ_UM_ML_1.4_compressed.pdf", "size": 564507, "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/112XT-115XT  V2-0 FR_compressed.pdf", "size": 1711323, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/112xt_compressed.pdf", "size": 279074, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/115fmfr.pdf", "size": 984658, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "mtd",
+      "name": "MTD 108a / 112 / 115",
+      "files": [
+        { "path": "HP manuel/HP Manuel FR/mtd108afr.pdf", "size": 885119, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/mtd112fr_compressed.pdf", "size": 505485, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/mtd115afr_compressed.pdf", "size": 480339, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/MTD 108a-115b V1-2 FR.pdf", "size": 3657255, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "ks21",
+      "name": "KS21",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/KS21_OM_EN_compressed.pdf", "size": 10205714, "type": "manual" }
+      ]
+    },
+    {
+      "id": "ks28",
+      "name": "KS28",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/KS28_OM_EN_compressed.pdf", "size": 5640589, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/KS28_SPS_EN_3.0_compressed.pdf", "size": 1380119, "type": "spec" }
+      ]
+    },
+    {
+      "id": "sb6i",
+      "name": "SB6i",
+      "files": [
+        { "path": "HP manuel/HP system-spec-sheet/SB6i_SPS_EN_1.3_compressed.pdf", "size": 310492, "type": "spec" }
+      ]
+    },
+    {
+      "id": "sb10i",
+      "name": "SB10i",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/SB10i_OM_EN_compressed.pdf", "size": 1128824, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/SB10i_SPS_EN_1.5_compressed.pdf", "size": 321512, "type": "spec" }
+      ]
+    },
+    {
+      "id": "sb15m",
+      "name": "SB15m",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/SB15m_UM_EN_compressed.pdf", "size": 493066, "type": "manual" },
+        { "path": "HP manuel/HP Manuel Riging EN/SB15m_RM_EN_compressed.pdf", "size": 235722, "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/SB15m_UM_FR_compressed.pdf", "size": 499859, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel Riging FR/SB15m_RM_FR_compressed.pdf", "size": 237055, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "sb18",
+      "name": "SB18",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/SB18_UM_EN_compressed.pdf", "size": 390060, "type": "manual" },
+        { "path": "HP manuel/HP Manuel Riging EN/SB18_RM_EN.pdf", "size": 9026521, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/SB18_SPS_EN_7.0_compressed.pdf", "size": 1020219, "type": "spec" },
+        { "path": "HP manuel/HP system-spec-sheet/SB18 IIi_SPS_EN_1.0_compressed.pdf", "size": 1027889, "type": "spec" },
+        { "path": "HP manuel/HP Manuel FR/SB18_UM_FR.pdf", "size": 898736, "lang": "fr", "type": "manual" },
+        { "path": "HP manuel/HP Manuel Riging FR/SB18_RM_FR_compressed.pdf", "size": 6971869, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "sb28",
+      "name": "SB28",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/SB28_UM_EN_compressed.pdf", "size": 612123, "type": "manual" },
+        { "path": "HP manuel/HP Manuel Riging EN/SB28_RM_EN.pdf", "size": 3102578, "type": "manual" },
+        { "path": "HP manuel/HP Manuel Riging EN/SB28CHAIN_PI_ML.pdf", "size": 354835, "type": "manual" }
+      ]
+    },
+    {
+      "id": "sb118",
+      "name": "SB118",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/SB118_UM_ML_2-0_compressed.pdf", "size": 791551, "type": "manual" },
+        { "path": "HP manuel/HP Manuel FR/SB118_SP_FR_1.pdf", "size": 676333, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "sb218",
+      "name": "SB218",
+      "files": [
+        { "path": "HP manuel/HP Manuel FR/SB218.pdf", "size": 252548, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "clamp1000",
+      "name": "CLAMP1000",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/CLAMP1000_OM_EN_compressed.pdf", "size": 6220394, "type": "manual" }
+      ]
+    },
+    {
+      "id": "amplifiers",
+      "name": "Amplifier Manuals",
+      "files": [
+        { "path": "amplisManuel/LA4_UM_EN_compressed.pdf", "size": 778013, "type": "manual" },
+        { "path": "amplisManuel/LA8_OM_EN_compressed.pdf", "size": 1341739, "type": "manual" },
+        { "path": "amplisManuel/LA12X_OM_EN_compressed.pdf", "size": 1436180, "type": "manual" },
+        { "path": "amplisManuel/LA4X_OM_EN_compressed.pdf", "size": 1832805, "type": "manual" },
+        { "path": "amplisManuel/LA2Xi_OM_EN_compressed.pdf", "size": 2056126, "type": "manual" },
+        { "path": "amplisManuel/LA7.16_OM_EN_compressed.pdf", "size": 2216402, "type": "manual" },
+        { "path": "amplisManuel/LA1.16i_OM_EN_compressed.pdf", "size": 1819388, "type": "manual" },
+        { "path": "amplisManuel/LARack/LA-RAK_III_SPS_EN_1.3_compressed.pdf", "size": 2516664, "type": "manual" },
+        { "path": "amplisManuel/LARack/LA-RAK II_AVB_SPS_EN_1.2_compressed.pdf", "size": 856877, "type": "manual" }
+      ]
+    }
+  ]
+}
