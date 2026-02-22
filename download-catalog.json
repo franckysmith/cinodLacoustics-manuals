@@ -4,11 +4,17 @@
   "items": [
     {
       "id": "k1",
-      "name": "K1 / K1-SB",
+      "name": "K1",
       "files": [
         { "path": "HP manuel/HP Manuel Riging EN/K1_RM_EN_compressed.pdf", "size": 51775865, "type": "manual" },
-        { "path": "HP manuel/HP system-spec-sheet/K1-SB_SP_EN_2.0_compressed.pdf", "size": 868548, "type": "spec" },
         { "path": "HP manuel/HP Manuel FR/K1_RM_FR_compressed.pdf", "size": 53616934, "lang": "fr", "type": "manual" }
+      ]
+    },
+    {
+      "id": "k1sb",
+      "name": "K1-SB",
+      "files": [
+        { "path": "HP manuel/HP system-spec-sheet/K1-SB_SP_EN_2.0_compressed.pdf", "size": 868548, "type": "spec" }
       ]
     },
     {
