@@ -125,6 +125,7 @@
       "name": "Syva",
       "files": [
         { "path": "HP manuel/HP Manuel EN/Syva_OM_EN_compressed.pdf", "size": 2840813, "type": "manual" }
+        { "path": "HP manuel/HP system-spec-sheet/SYVA_SPS_EN_2.2_compressed.pdf", "size": 118890, "type": "spec" }
       ]
     },
     {
