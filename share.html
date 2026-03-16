@@ -80,8 +80,15 @@ body {
 <div id="app"><div class="error" id="err" style="display:none">Lien invalide. Scannez le QR code.</div></div>
 <script>
 (function() {
-  var raw = decodeURIComponent(location.hash.substring(1));
-  if (!raw) { document.getElementById('err').style.display = 'block'; return; }
+  var hash = location.hash.substring(1);
+  if (!hash) { document.getElementById('err').style.display = 'block'; return; }
+  var raw;
+  try {
+    // Try base64 first, then fallback to URI-encoded JSON
+    raw = decodeURIComponent(escape(atob(hash)));
+  } catch(e) {
+    try { raw = decodeURIComponent(hash); } catch(e2) { raw = hash; }
+  }
   var d;
   try { d = JSON.parse(raw); } catch(e) {
     document.getElementById('err').style.display = 'block'; return;
