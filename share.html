@@ -82,16 +82,17 @@ body {
 (function() {
   var hash = location.hash.substring(1);
   if (!hash) { document.getElementById('err').style.display = 'block'; return; }
-  var raw;
-  try {
-    // Try base64 first, then fallback to URI-encoded JSON
-    raw = decodeURIComponent(escape(atob(hash)));
-  } catch(e) {
-    try { raw = decodeURIComponent(hash); } catch(e2) { raw = hash; }
-  }
   var d;
-  try { d = JSON.parse(raw); } catch(e) {
-    document.getElementById('err').style.display = 'block'; return;
+  try {
+    d = JSON.parse(atob(hash));
+  } catch(e) {
+    try { d = JSON.parse(decodeURIComponent(hash)); } catch(e2) {
+      try { d = JSON.parse(hash); } catch(e3) {
+        document.getElementById('err').textContent = 'Erreur: ' + e.message + ' | hash=' + hash.substring(0, 60) + '...';
+        document.getElementById('err').style.display = 'block';
+        return;
+      }
+    }
   }
 
   var roleName = d.r === 'R' ? 'Road' : 'Rigger';
