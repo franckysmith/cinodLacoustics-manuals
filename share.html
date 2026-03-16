@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Cinod — Fiche technique</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #0c0c1d;
+  color: #f0ece4;
+  padding: 16px;
+  min-height: 100vh;
+}
+.header {
+  text-align: center;
+  padding: 20px 0 12px;
+}
+.logo { font-size: 1.1rem; font-weight: 700; color: #c8960a; letter-spacing: 2px; }
+.role-badge {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.role-road { background: #1565c020; color: #42a5f5; border: 1px solid #1565c040; }
+.role-rigger { background: #c6282820; color: #ef5350; border: 1px solid #c6282840; }
+.venue-name {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 16px 0 4px;
+  color: #fff;
+}
+.venue-date { font-size: 0.85rem; color: #7a7a98; }
+
+.source-card {
+  background: #111128;
+  border: 1px solid #252542;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 12px 0;
+}
+.source-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.source-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f0ece4;
+}
+.source-point {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #c8960a;
+}
+.source-stereo {
+  font-size: 0.75rem;
+  color: #585878;
+}
+.source-info {
+  font-size: 0.85rem;
+  color: #9898b8;
+  font-family: monospace;
+  margin-top: 6px;
+}
+.source-info span { margin-right: 8px; }
+.source-angles {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: #0c0c1d;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 0.82rem;
+  color: #ff8a65;
+  line-height: 1.6;
+}
+.source-detail {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  font-family: monospace;
+  color: #7a7a98;
+}
+.source-comment {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #d4a044;
+}
+.weight-tag {
+  font-weight: 700;
+  color: #ef5350;
+}
+.height-tag {
+  color: #42a5f5;
+}
+
+.footer {
+  text-align: center;
+  padding: 24px 0;
+  color: #404060;
+  font-size: 0.75rem;
+}
+.footer a { color: #c8960a; text-decoration: none; }
+
+.print-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 1px solid #c8960a40;
+  background: #c8960a18;
+  color: #c8960a;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+.print-btn:active { background: #c8960a30; }
+
+.error {
+  text-align: center;
+  padding: 40px 20px;
+  color: #ef5350;
+  font-size: 1rem;
+}
+
+/* Print styles */
+@media print {
+  body { background: #fff; color: #000; padding: 10px; }
+  .print-btn { display: none; }
+  .source-card { background: #f8f8f8; border-color: #ddd; }
+  .source-name { color: #000; }
+  .source-info { color: #444; }
+  .source-angles { background: #f0f0f0; color: #c62828; }
+  .source-detail { color: #666; }
+  .source-comment { color: #8a6500; }
+  .weight-tag { color: #c62828; }
+  .height-tag { color: #1565c0; }
+  .source-point { color: #8a6500; }
+  .source-stereo { color: #888; }
+  .venue-name { color: #000; }
+  .venue-date { color: #666; }
+  .logo { color: #8a6500; }
+  .role-road { color: #1565c0; border-color: #1565c040; background: #1565c010; }
+  .role-rigger { color: #c62828; border-color: #c6282840; background: #c6282810; }
+  .footer { display: none; }
+}
+</style>
+</head>
+<body>
+
+<div id="app">
+  <div class="error" id="errorMsg" style="display:none;">
+    Lien invalide ou expiré.<br>Scannez à nouveau le QR code.
+  </div>
+</div>
+
+<script>
+(function() {
+  var raw = decodeURIComponent(window.location.hash.substring(1));
+  if (!raw) {
+    document.getElementById('errorMsg').style.display = 'block';
+    return;
+  }
+
+  // Parse the text-based QR data
+  var lines = raw.split('\n');
+  if (lines.length < 1) {
+    document.getElementById('errorMsg').style.display = 'block';
+    return;
+  }
+
+  // First line: ROLE - VENUE NAME
+  var firstLine = lines[0];
+  var role = 'road';
+  var venueName = firstLine;
+  if (firstLine.indexOf('ROAD - ') === 0) {
+    role = 'road';
+    venueName = firstLine.substring(7);
+  } else if (firstLine.indexOf('RIGGER - ') === 0) {
+    role = 'rigger';
+    venueName = firstLine.substring(9);
+  }
+
+  // Second line may be date
+  var date = '';
+  var startIdx = 1;
+  if (lines.length > 1 && lines[1] && lines[1].match(/^\d/)) {
+    date = lines[1];
+    startIdx = 2;
+  }
+
+  // Parse sources
+  var sources = [];
+  var current = null;
+
+  for (var i = startIdx; i < lines.length; i++) {
+    var line = lines[i];
+    if (!line) continue;
+
+    if (line.indexOf('> ') === 0) {
+      // New source
+      if (current) sources.push(current);
+      current = { name: line.substring(2), info: '', angles: '', details: [], comment: '' };
+    } else if (current) {
+      if (line.indexOf('  ! ') === 0) {
+        current.comment = line.substring(4);
+      } else if (line.indexOf('  ') === 0) {
+        var content = line.substring(2);
+        // Check if it's angles (contains °)
+        if (content.match(/\d+(\.\d+)?°/)) {
+          current.angles = content;
+        } else if (!current.info) {
+          current.info = content;
+        } else {
+          current.details.push(content);
+        }
+      }
+    }
+  }
+  if (current) sources.push(current);
+
+  // Build HTML
+  var html = '<div class="header">';
+  html += '<div class="logo">CINOD</div>';
+  html += '<div class="role-badge ' + (role === 'road' ? 'role-road' : 'role-rigger') + '">' + role.toUpperCase() + '</div>';
+  html += '<div class="venue-name">' + escHtml(venueName) + '</div>';
+  if (date) html += '<div class="venue-date">' + escHtml(date) + '</div>';
+  html += '</div>';
+
+  for (var s = 0; s < sources.length; s++) {
+    var src = sources[s];
+    // Parse name for point label and stereo
+    var nameParts = src.name;
+    var point = '';
+    var stereo = '';
+    if (nameParts.indexOf(' J/C') !== -1) {
+      stereo = 'Jardin / Cour';
+      nameParts = nameParts.replace(' J/C', '');
+    }
+
+    html += '<div class="source-card">';
+    html += '<div class="source-header">';
+    html += '<span class="source-name">' + escHtml(nameParts) + '</span>';
+    if (stereo) html += '<span class="source-stereo">' + stereo + '</span>';
+    html += '</div>';
+
+    if (src.info) {
+      // Highlight weight and height
+      var infoHtml = escHtml(src.info)
+        .replace(/(\d+(\.\d+)?kg)/g, '<span class="weight-tag">$1</span>')
+        .replace(/(h=[\d.]+m)/g, '<span class="height-tag">$1</span>');
+      html += '<div class="source-info">' + infoHtml + '</div>';
+    }
+
+    if (src.angles) {
+      html += '<div class="source-angles">' + escHtml(src.angles) + '</div>';
+    }
+
+    for (var d = 0; d < src.details.length; d++) {
+      var detailHtml = escHtml(src.details[d])
+        .replace(/(\d+(\.\d+)?kg)/g, '<span class="weight-tag">$1</span>');
+      html += '<div class="source-detail">' + detailHtml + '</div>';
+    }
+
+    if (src.comment) {
+      html += '<div class="source-comment">⚠ ' + escHtml(src.comment) + '</div>';
+    }
+
+    html += '</div>';
+  }
+
+  html += '<button class="print-btn" onclick="window.print()">Imprimer</button>';
+  html += '<div class="footer">Généré par <a href="#">Cinod for L-Acoustics</a></div>';
+
+  document.getElementById('app').innerHTML = html;
+  document.title = 'Cinod — ' + venueName + ' (' + role + ')';
+
+  function escHtml(str) {
+    var d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+})();
+</script>
+</body>
+</html>
