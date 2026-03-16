@@ -8,286 +8,206 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: #0c0c1d;
-  color: #f0ece4;
-  padding: 16px;
-  min-height: 100vh;
+  background: #0c0c1d; color: #f0ece4;
+  padding: 16px; min-height: 100vh;
 }
-.header {
-  text-align: center;
-  padding: 20px 0 12px;
-}
+.header { text-align: center; padding: 20px 0 12px; }
 .logo { font-size: 1.1rem; font-weight: 700; color: #c8960a; letter-spacing: 2px; }
 .role-badge {
-  display: inline-block;
-  margin-top: 6px;
-  padding: 4px 14px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  display: inline-block; margin-top: 6px; padding: 4px 14px; border-radius: 20px;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
 }
-.role-road { background: #1565c020; color: #42a5f5; border: 1px solid #1565c040; }
-.role-rigger { background: #c6282820; color: #ef5350; border: 1px solid #c6282840; }
-.venue-name {
-  font-size: 1.8rem;
-  font-weight: 800;
-  margin: 16px 0 4px;
-  color: #fff;
-}
+.role-R { background: #1565c020; color: #42a5f5; border: 1px solid #1565c040; }
+.role-G { background: #c6282820; color: #ef5350; border: 1px solid #c6282840; }
+.venue-name { font-size: 1.8rem; font-weight: 800; margin: 16px 0 4px; color: #fff; }
 .venue-date { font-size: 0.85rem; color: #7a7a98; }
 
-.source-card {
-  background: #111128;
-  border: 1px solid #252542;
-  border-radius: 12px;
-  padding: 14px 16px;
-  margin: 12px 0;
+.card {
+  background: #111128; border: 1px solid #252542; border-radius: 12px;
+  padding: 14px 16px; margin: 12px 0;
 }
-.source-header {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.source-name {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #f0ece4;
-}
-.source-point {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #c8960a;
-}
-.source-stereo {
-  font-size: 0.75rem;
-  color: #585878;
-}
-.source-info {
-  font-size: 0.85rem;
-  color: #9898b8;
-  font-family: monospace;
-  margin-top: 6px;
-}
-.source-info span { margin-right: 8px; }
-.source-angles {
-  margin-top: 8px;
-  padding: 8px 10px;
-  background: #0c0c1d;
-  border-radius: 8px;
-  font-family: monospace;
-  font-size: 0.82rem;
-  color: #ff8a65;
-  line-height: 1.6;
-}
-.source-detail {
-  margin-top: 6px;
-  font-size: 0.8rem;
-  font-family: monospace;
-  color: #7a7a98;
-}
-.source-comment {
-  margin-top: 6px;
-  font-size: 0.8rem;
-  font-style: italic;
-  color: #d4a044;
-}
-.weight-tag {
-  font-weight: 700;
-  color: #ef5350;
-}
-.height-tag {
-  color: #42a5f5;
-}
+.src-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.src-name { font-size: 1.2rem; font-weight: 700; }
+.src-point { font-size: 0.85rem; font-weight: 700; color: #c8960a; }
+.src-stereo { font-size: 0.75rem; color: #585878; }
+.src-info { font-size: 0.85rem; color: #9898b8; font-family: monospace; margin-top: 6px; }
+.src-info span { margin-right: 8px; }
+.wt { font-weight: 700; color: #ef5350; }
+.ht { color: #42a5f5; }
+.src-comment { margin-top: 6px; font-size: 0.8rem; font-style: italic; color: #d4a044; }
 
-.footer {
-  text-align: center;
-  padding: 24px 0;
-  color: #404060;
-  font-size: 0.75rem;
+/* Toggle button */
+.toggle-btn {
+  display: block; margin: 16px auto; padding: 10px 20px; border-radius: 10px;
+  border: 1px solid #c8960a40; background: #c8960a18; color: #c8960a;
+  font-size: 0.85rem; font-weight: 600; cursor: pointer; font-family: inherit;
 }
-.footer a { color: #c8960a; text-decoration: none; }
+.toggle-btn:active { background: #c8960a30; }
+
+/* SVG drawings */
+.drawing { margin-top: 10px; overflow-x: auto; }
+.drawing svg { display: block; margin: 0 auto; }
 
 .print-btn {
-  display: block;
-  margin: 20px auto;
-  padding: 12px 24px;
-  border-radius: 10px;
-  border: 1px solid #c8960a40;
-  background: #c8960a18;
-  color: #c8960a;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: inherit;
+  display: block; margin: 20px auto; padding: 12px 24px; border-radius: 10px;
+  border: 1px solid #c8960a40; background: #c8960a18; color: #c8960a;
+  font-size: 0.9rem; font-weight: 600; cursor: pointer; font-family: inherit;
 }
-.print-btn:active { background: #c8960a30; }
+.footer { text-align: center; padding: 24px 0; color: #404060; font-size: 0.75rem; }
+.footer a { color: #c8960a; text-decoration: none; }
+.error { text-align: center; padding: 40px 20px; color: #ef5350; }
 
-.error {
-  text-align: center;
-  padding: 40px 20px;
-  color: #ef5350;
-  font-size: 1rem;
-}
-
-/* Print styles */
 @media print {
   body { background: #fff; color: #000; padding: 10px; }
-  .print-btn { display: none; }
-  .source-card { background: #f8f8f8; border-color: #ddd; }
-  .source-name { color: #000; }
-  .source-info { color: #444; }
-  .source-angles { background: #f0f0f0; color: #c62828; }
-  .source-detail { color: #666; }
-  .source-comment { color: #8a6500; }
-  .weight-tag { color: #c62828; }
-  .height-tag { color: #1565c0; }
-  .source-point { color: #8a6500; }
-  .source-stereo { color: #888; }
-  .venue-name { color: #000; }
-  .venue-date { color: #666; }
+  .print-btn, .toggle-btn { display: none !important; }
+  .card { background: #f8f8f8; border-color: #ddd; }
+  .src-name { color: #000; } .src-info { color: #444; }
+  .wt { color: #c62828; } .ht { color: #1565c0; }
+  .src-point { color: #8a6500; } .src-stereo { color: #888; }
+  .venue-name { color: #000; } .venue-date { color: #666; }
   .logo { color: #8a6500; }
-  .role-road { color: #1565c0; border-color: #1565c040; background: #1565c010; }
-  .role-rigger { color: #c62828; border-color: #c6282840; background: #c6282810; }
+  .role-R { color: #1565c0; } .role-G { color: #c62828; }
   .footer { display: none; }
+  .cab-box { stroke: #333 !important; fill: #f0f0f0 !important; }
+  .cab-front { stroke: #000 !important; }
+  .cab-num { fill: #000 !important; }
+  .angle-text { fill: #c62828 !important; }
+  .cable-arc { stroke: #8a6500 !important; }
 }
 </style>
 </head>
 <body>
-
-<div id="app">
-  <div class="error" id="errorMsg" style="display:none;">
-    Lien invalide ou expiré.<br>Scannez à nouveau le QR code.
-  </div>
-</div>
-
+<div id="app"><div class="error" id="err" style="display:none">Lien invalide. Scannez le QR code.</div></div>
 <script>
 (function() {
-  var raw = decodeURIComponent(window.location.hash.substring(1));
-  if (!raw) {
-    document.getElementById('errorMsg').style.display = 'block';
-    return;
+  var raw = decodeURIComponent(location.hash.substring(1));
+  if (!raw) { document.getElementById('err').style.display = 'block'; return; }
+  var d;
+  try { d = JSON.parse(raw); } catch(e) {
+    document.getElementById('err').style.display = 'block'; return;
   }
 
-  // Parse the text-based QR data
-  var lines = raw.split('\n');
-  if (lines.length < 1) {
-    document.getElementById('errorMsg').style.display = 'block';
-    return;
+  var roleName = d.r === 'R' ? 'Road' : 'Rigger';
+  var h = '<div class="header"><div class="logo">CINOD</div>';
+  h += '<div class="role-badge role-' + d.r + '">' + roleName + '</div>';
+  h += '<div class="venue-name">' + esc(d.v) + '</div>';
+  if (d.d) h += '<div class="venue-date">' + esc(d.d) + '</div>';
+  h += '</div>';
+
+  for (var i = 0; i < d.s.length; i++) {
+    var s = d.s[i];
+    h += '<div class="card">';
+    h += '<div class="src-header">';
+    h += '<span class="src-name">' + esc(s.n) + '</span>';
+    if (s.l) h += '<span class="src-point">' + esc(s.l) + '</span>';
+    if (s.jc) h += '<span class="src-stereo">Jardin / Cour</span>';
+    h += '</div>';
+
+    // Info line
+    var info = s.c + ' ' + esc(s.t);
+    if (s.w) info += ' <span class="wt">' + s.w + 'kg</span>';
+    if (s.z !== undefined) info += ' <span class="ht">h=' + s.z + 'm</span>';
+    if (s.m) info += ' <span>' + s.m + ' mot.</span>';
+    h += '<div class="src-info">' + info + '</div>';
+
+    // Rigger extras
+    if (d.r === 'G') {
+      if (s.ml) h += '<div class="src-info">Charge moteur: <span class="wt">' + s.ml + 'kg</span></div>';
+      if (s.b) h += '<div class="src-info">Bumper: ' + esc(s.b) + '</div>';
+      if (s.x !== undefined) h += '<div class="src-info">Position: X:' + s.x + ' Y:' + s.y + '</div>';
+    }
+
+    if (s.cm) h += '<div class="src-comment">' + esc(s.cm) + '</div>';
+
+    // Drawing placeholder
+    h += '<div class="drawing" id="draw-' + i + '"></div>';
+    h += '</div>';
   }
 
-  // First line: ROLE - VENUE NAME
-  var firstLine = lines[0];
-  var role = 'road';
-  var venueName = firstLine;
-  if (firstLine.indexOf('ROAD - ') === 0) {
-    role = 'road';
-    venueName = firstLine.substring(7);
-  } else if (firstLine.indexOf('RIGGER - ') === 0) {
-    role = 'rigger';
-    venueName = firstLine.substring(9);
+  h += '<button class="toggle-btn" id="toggleDraw">Voir les sch\u00e9mas</button>';
+  h += '<button class="print-btn" onclick="window.print()">Imprimer</button>';
+  h += '<div class="footer">G\u00e9n\u00e9r\u00e9 par <a href="#">Cinod for L-Acoustics</a></div>';
+
+  document.getElementById('app').innerHTML = h;
+  document.title = 'Cinod \u2014 ' + d.v + ' (' + roleName + ')';
+
+  // Toggle drawings
+  var drawVisible = false;
+  document.getElementById('toggleDraw').onclick = function() {
+    drawVisible = !drawVisible;
+    this.textContent = drawVisible ? 'Masquer les sch\u00e9mas' : 'Voir les sch\u00e9mas';
+    for (var i = 0; i < d.s.length; i++) {
+      var el = document.getElementById('draw-' + i);
+      if (drawVisible) {
+        el.innerHTML = buildDrawing(d.s[i], d.r);
+      } else {
+        el.innerHTML = '';
+      }
+    }
+  };
+
+  function esc(str) {
+    var d = document.createElement('div'); d.textContent = str || ''; return d.innerHTML;
   }
 
-  // Second line may be date
-  var date = '';
-  var startIdx = 1;
-  if (lines.length > 1 && lines[1] && lines[1].match(/^\d/)) {
-    date = lines[1];
-    startIdx = 2;
-  }
+  // === SVG Drawing Builder ===
+  function buildDrawing(src, role) {
+    if (!src.a || !src.a.length) {
+      if (!src.g || !src.g.length) return '';
+    }
 
-  // Parse sources
-  var sources = [];
-  var current = null;
+    var count = src.c || 0;
+    if (count === 0) return '';
 
-  for (var i = startIdx; i < lines.length; i++) {
-    var line = lines[i];
-    if (!line) continue;
+    var cabW = 70, cabH = 36, gap = 14;
+    var leftM = 50;
+    var totalH = count * (cabH + gap) + 40;
+    var svgW = leftM + cabW + 40;
 
-    if (line.indexOf('> ') === 0) {
-      // New source
-      if (current) sources.push(current);
-      current = { name: line.substring(2), info: '', angles: '', details: [], comment: '' };
-    } else if (current) {
-      if (line.indexOf('  ! ') === 0) {
-        current.comment = line.substring(4);
-      } else if (line.indexOf('  ') === 0) {
-        var content = line.substring(2);
-        // Check if it's angles (contains °)
-        if (content.match(/\d+(\.\d+)?°/)) {
-          current.angles = content;
-        } else if (!current.info) {
-          current.info = content;
-        } else {
-          current.details.push(content);
+    var svg = '<svg width="' + svgW + '" height="' + totalH + '" xmlns="http://www.w3.org/2000/svg">';
+
+    // Cable arcs first (behind)
+    if (src.g) {
+      for (var ci = 0; ci < count - 1; ci++) {
+        if (src.g[ci] !== undefined && src.g[ci] >= 0 &&
+            src.g[ci + 1] !== undefined && src.g[ci + 1] >= 0 &&
+            src.g[ci] === src.g[ci + 1]) {
+          var y1 = 20 + ci * (cabH + gap) + cabH;
+          var y2 = 20 + (ci + 1) * (cabH + gap);
+          var cy = (y1 + y2) / 2;
+          var r = 22;
+          var half = 65 * Math.PI / 180;
+          var ax1 = leftM + r * Math.cos(Math.PI - half);
+          var ay1 = cy + r * Math.sin(Math.PI - half);
+          var ax2 = leftM + r * Math.cos(Math.PI + half);
+          var ay2 = cy + r * Math.sin(Math.PI + half);
+          svg += '<path d="M ' + ax1 + ' ' + ay1 + ' A ' + r + ' ' + r + ' 0 0 1 ' + ax2 + ' ' + ay2 + '" fill="none" class="cable-arc" stroke="#c8960a" stroke-width="3" stroke-linecap="round"/>';
         }
       }
     }
-  }
-  if (current) sources.push(current);
 
-  // Build HTML
-  var html = '<div class="header">';
-  html += '<div class="logo">CINOD</div>';
-  html += '<div class="role-badge ' + (role === 'road' ? 'role-road' : 'role-rigger') + '">' + role.toUpperCase() + '</div>';
-  html += '<div class="venue-name">' + escHtml(venueName) + '</div>';
-  if (date) html += '<div class="venue-date">' + escHtml(date) + '</div>';
-  html += '</div>';
+    // Cabinets
+    for (var i = 0; i < count; i++) {
+      var y = 20 + i * (cabH + gap);
 
-  for (var s = 0; s < sources.length; s++) {
-    var src = sources[s];
-    // Parse name for point label and stereo
-    var nameParts = src.name;
-    var point = '';
-    var stereo = '';
-    if (nameParts.indexOf(' J/C') !== -1) {
-      stereo = 'Jardin / Cour';
-      nameParts = nameParts.replace(' J/C', '');
+      // Angle between this and previous
+      if (i > 0 && src.a && src.a[i] !== null && src.a[i] !== undefined) {
+        var ay = y - gap / 2 + 5;
+        svg += '<text x="' + (leftM - 8) + '" y="' + ay + '" text-anchor="end" class="angle-text" fill="#ff8a65" font-size="13" font-weight="700" font-family="Arial">' + src.a[i] + '\u00B0</text>';
+      }
+
+      // Cabinet body
+      svg += '<rect x="' + leftM + '" y="' + y + '" width="' + cabW + '" height="' + cabH + '" rx="3" class="cab-box" fill="#1a1a34" stroke="#3a3a5a" stroke-width="1.5"/>';
+
+      // Front face (right side)
+      svg += '<line x1="' + (leftM + cabW) + '" y1="' + y + '" x2="' + (leftM + cabW) + '" y2="' + (y + cabH) + '" class="cab-front" stroke="#6a6a8a" stroke-width="2.5" stroke-linecap="round"/>';
+
+      // Cabinet number
+      svg += '<text x="' + (leftM + cabW / 2) + '" y="' + (y + cabH / 2 + 6) + '" text-anchor="middle" class="cab-num" fill="#9898b8" font-size="14" font-weight="800" font-family="monospace">' + (i + 1) + '</text>';
     }
 
-    html += '<div class="source-card">';
-    html += '<div class="source-header">';
-    html += '<span class="source-name">' + escHtml(nameParts) + '</span>';
-    if (stereo) html += '<span class="source-stereo">' + stereo + '</span>';
-    html += '</div>';
-
-    if (src.info) {
-      // Highlight weight and height
-      var infoHtml = escHtml(src.info)
-        .replace(/(\d+(\.\d+)?kg)/g, '<span class="weight-tag">$1</span>')
-        .replace(/(h=[\d.]+m)/g, '<span class="height-tag">$1</span>');
-      html += '<div class="source-info">' + infoHtml + '</div>';
-    }
-
-    if (src.angles) {
-      html += '<div class="source-angles">' + escHtml(src.angles) + '</div>';
-    }
-
-    for (var d = 0; d < src.details.length; d++) {
-      var detailHtml = escHtml(src.details[d])
-        .replace(/(\d+(\.\d+)?kg)/g, '<span class="weight-tag">$1</span>');
-      html += '<div class="source-detail">' + detailHtml + '</div>';
-    }
-
-    if (src.comment) {
-      html += '<div class="source-comment">⚠ ' + escHtml(src.comment) + '</div>';
-    }
-
-    html += '</div>';
-  }
-
-  html += '<button class="print-btn" onclick="window.print()">Imprimer</button>';
-  html += '<div class="footer">Généré par <a href="#">Cinod for L-Acoustics</a></div>';
-
-  document.getElementById('app').innerHTML = html;
-  document.title = 'Cinod — ' + venueName + ' (' + role + ')';
-
-  function escHtml(str) {
-    var d = document.createElement('div');
-    d.textContent = str;
-    return d.innerHTML;
+    svg += '</svg>';
+    return svg;
   }
 })();
 </script>
