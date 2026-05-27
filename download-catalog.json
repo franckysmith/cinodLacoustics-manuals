@@ -124,7 +124,8 @@
       "id": "syva",
       "name": "Syva",
       "files": [
-        { "path": "HP manuel/HP Manuel EN/Syva_OM_EN_compressed.pdf", "size": 2840813, "type": "manual" }
+        { "path": "HP manuel/HP Manuel EN/Syva_OM_EN_compressed.pdf", "size": 2840813, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/SYVA_SPS_EN_2.2_compressed.pdf", "size": 1058844, "type": "spec" }
       ]
     },
     {
@@ -154,7 +155,8 @@
       "id": "x8",
       "name": "X8",
       "files": [
-        { "path": "HP manuel/HP Manuel EN/X8_OM_EN_compressed.pdf", "size": 6258890, "type": "manual" }
+        { "path": "HP manuel/HP Manuel EN/X8_OM_EN_compressed.pdf", "size": 6258890, "type": "manual" },
+        { "path": "HP manuel/HP system-spec-sheet/X8_SPS_EN_3.0_compressed.pdf", "size": 1546695, "type": "spec" }
       ]
     },
     {
@@ -329,6 +331,20 @@
         { "path": "amplisManuel/LA2Xi_OM_EN_compressed.pdf", "size": 2056126, "type": "manual" },
         { "path": "amplisManuel/LA7.16_OM_EN_compressed.pdf", "size": 2216402, "type": "manual" },
         { "path": "amplisManuel/LA1.16i_OM_EN_compressed.pdf", "size": 1819388, "type": "manual" }
+      ]
+    },
+    {
+      "id": "cs1",
+      "name": "CS1",
+      "files": [
+        { "path": "HP manuel/HP Manuel EN/CS1_OM_EN_compressed.pdf", "size": 34330767, "type": "manual" }
+      ]
+    },
+    {
+      "id": "ampref",
+      "name": "Amplification Reference (TB)",
+      "files": [
+        { "path": "HP manuel/Amplification_Reference_TB_FR_compressed.pdf", "size": 138047, "lang": "fr", "type": "manual" }
       ]
     },
     {
